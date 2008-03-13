@@ -1,0 +1,65 @@
+Revision history for Perl extension Net::Raccdoc.
+
+1.3   Wed Mar 12 22:22:00 2008
+	- Change module name from Net::ISCABBS to Net::Raccdoc
+	- Update tests
+	- Move source control to git/github
+
+1.2   Fri Mar  3 11:23:00 2006
+        - Updating with bugfixes long neglected.
+        - Adding the DAMMIT method to read anonymous posts.  Note the change
+          in the ->read method.
+
+1.1   Sat Feb 19 15:48:00 2005
+        - Fix a typo in the set_first_unread method.
+        - Don't do a SETRC after each ->read() - you'll need to do it
+          manually.
+
+1.0   Tue Feb 15 16:31:00 2005
+        - Add a post method, to allow writing into forums.
+        - Add a delete method, to allow deletion of posts.
+        - Add a can_write method, to check whether or not you have write permission
+          in the current forum.
+        - Set $@ on most failures to provide more error details.
+        - Bump version from 0.53 to 1.0, since we now have write ability.
+
+0.53  Mon Feb 14 12:36:00 2005
+        - Return "undef" instead of "0" when things fail.
+        - Add a new method, get_forum_noteids, which does an "XHDR" on the backend and
+          returns just the note ids in a forum, vs. the more expensive "XHDR ALL"
+          that get_forum_headers performs.  The latter returns more information, though.
+
+0.52  Wed Dec 28 17:00:00 2004
+        - Require Perl 5.005 or higher, instead of Perl 5.8.1 or higher.
+          Thanks to Mystic One for pointing out the error.
+
+0.51  Fri Dec  3 17:00:00 2004
+        - Changed the croak calls in the modules to "return 0" in order to let
+          the client code handle failures in their own way.
+
+0.5   Sun Oct 31 13:50:00 2004
+        - Fixed bug that was causing incorrect date parsing in some forums.
+        - Added access to the XHDR ALL command to get information about all
+          posts in a forum.
+        - Documentation fix.
+
+0.4   Tue Oct  5 21:44:00 2004
+        - Enable access to the Lobby> and Mail>
+        - Add more tests to t/2.t
+
+0.3   Tue Sep 27 15:55:00 2004
+        - Use the Forum Moderator information, as well as the "todo" count of
+          unread messages, new as of today.
+
+0.2   Mon Sep 27 15:55:00 2004
+        - Based on Tanj's advice, only check the first digit of status codes,
+          as well as reworking the code to accept key:value pairs in any 
+          order.
+        - Change the lastmessage/firstmessage hash keys to lastnote/firstnote,
+          since that is how the system returns them and it's easier to 
+          program that way.
+
+0.1   Sun Sep 26 14:28:02 2004
+	- original version; created by h2xs 1.22 with options
+		-AX Net::ISCABBS
+

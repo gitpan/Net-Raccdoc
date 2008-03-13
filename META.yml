@@ -1,0 +1,20 @@
+---
+name: Net-Raccdoc
+version: 1.3
+author:
+  - "H. Wade Minter, E<lt>minter@lunenburg.orgE<gt>\nL<http://www.lunenburg.org/>"
+abstract: Perl interface to the Raccdoc system
+license: perl
+requires:
+  IO::Socket::INET: '>= 0'
+  perl: 5.6.1
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
+provides:
+  Net::Raccdoc:
+    file: lib/Net/Raccdoc.pm
+    version: 1.3
+resources:
+  license: http://dev.perl.org/licenses/

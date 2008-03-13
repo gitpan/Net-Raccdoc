@@ -1,0 +1,10 @@
+Changes
+lib/Net/Raccdoc.pm
+Makefile.PL
+Build.PL
+MANIFEST
+README
+t/1.t
+t/2.t
+examples/readlobby.pl
+META.yml

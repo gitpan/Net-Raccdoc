@@ -1,0 +1,55 @@
+Net::Raccdoc 
+========================
+
+This is a Perl version of the Raccdoc BBS interface, formerly known
+as Net::ISCABBS.  See the POD/manpages for more information.
+
+========================
+ABOUT ISCABBS
+
+Established in 1989, ISCABBS has provided a virtual community for students 
+of the University of Iowa and the Internet in general. Today ISCABBS is the 
+world's largest free bulletin board system on the Internet, with over 5,000 
+active members. We have a validation structure to help prevent harassment 
+while allowing for anonymity, a team of System Operators who help to maintain 
+a near round the clock watch on activities, and nearly 200 discussion forums 
+which cover a wide variety of topics, from the intensely technical to the 
+sublimely silly.
+
+The base code for ISCABBS is D.O.C. (Daves' Own Citadel), a telnet-based BBS 
+code derived originally from Citadel. The D.O.C. code was written primarily 
+by Dr.  David Lacey, then a student at the University of Iowa. In 2001 the 
+code for D.O.C. was released under the GNU General Public License. Several 
+variants have already been developed from this base code.
+
+ISCABBS offers Intra-BBS electronic mail and real-time instant messages 
+between users and a variety of forums covering many areas of academic and 
+social discussion,  as well as general discussion forums.
+
+ISCABBS was formerly owned and maintained by the Iowa Student Computer 
+Association at the University of Iowa in Iowa City, Iowa. In 2007, ownership 
+of the code and the BBS transferred to a nonprofit corporation composed of 
+BBS users.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Build.PL
+   ./Build
+   ./Build test
+   ./Build install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  IO::Socket::INET
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2004 H. Wade Minter <minter@lunenburg.org>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
